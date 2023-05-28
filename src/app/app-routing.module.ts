@@ -8,7 +8,13 @@ const routes: Routes = [
   },
   /*{
     path: '', component: ContactanosComponent
-  }*/
+  }, {
+    path: '404', component: NotFoundComponent
+  },
+  {
+    path: '**', redirectTo: '404'
+  }
+  */
 ];
 
 @NgModule({
