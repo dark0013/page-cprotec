@@ -1,36 +1,74 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+<div class="py-4" style="background-color: #093c79; color:white" class="mb-4">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#">PLATAFORMA EDUCATIVA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#">NOTICIAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#">CONTÁCTANOS</a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+<!-- footer -->
+<footer style="background-color: #009bff; padding: 20px;">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="fw-bold">CONTÁCTANOS</h3>
+        <div>Portoviejo: Calle 5 de octubre y Av. del Ejercito</div>
+        <div>Guayaquil: Av. Francisco de Orellana. Sky Building</div>
+
+        <div class="my-2"><img src="assets/img/BOTONES/MAIL_PIE.png" width="4%"> info@ceprotec.net</div>
+        <div class="my-2"><img src="assets/img/BOTONES/FACEBOOK_PIE.png" width="4%"> Facebook</div>
+        <div class="my-2"><img src="assets/img/BOTONES/IG_PIE.png" width="4%"> Instagram</div>
+        <div class="my-2"><img src="assets/img/BOTONES/WHATSAPP_PIE.png" width="4%"> WhatsApp</div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="fw-bold">POLÍTICAS DE PRIVACIDAD</h3>
+
+        <P>CPROTEC respeta su derecho de privacidad. Esta política resume qué información personal podemos
+          recoger, de qué manera podemos utilizar esta información y otros temas importantes relacionado
+          con su privacidad y protección de datos.<br><br>
+
+          Es política de CPROTEC cumplir con todas las leyes de privacidad y protección de datos vigentes.
+          Este compromiso refleja el valor que le damos al hecho de obtener y conservar la confianza de
+          nuestros clientes, socios comerciales y ademá personas que comparten su información personal con
+          nosotros.
+
+        </P>
+      </div>
+    </div>
+    <div class="row my-3">
+      <p>Derecho reservado para CPROTEC</p>
     </div>
   </div>
-</nav>
+</footer>
