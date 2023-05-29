@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactanosComponent } from './page/contactanos/contactanos.component';
+import { CapacitacionesComponent } from './page/capacitaciones/capacitaciones.component';
 
 const routes: Routes = [
   {
     path: 'page/contactanos', component: ContactanosComponent
-  },
+  },{
+    path: 'page/capacitaciones', component: CapacitacionesComponent
+  }
   /*{
     path: '', component: ContactanosComponent
   }, {
