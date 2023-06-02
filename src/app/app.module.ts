@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactanosComponent } from './page/contactanos/contactanos.component';
 import { CapacitacionesComponent } from './page/capacitaciones/capacitaciones.component';
+import { SolucionesComponent } from './page/soluciones/soluciones.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactanosComponent,
-    CapacitacionesComponent
+    CapacitacionesComponent,
+    SolucionesComponent
   ],
   imports: [
     BrowserModule,
