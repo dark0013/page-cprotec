@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactanosComponent } from './page/contactanos/contactanos.component';
 import { CapacitacionesComponent } from './page/capacitaciones/capacitaciones.component';
+import { SolucionesComponent } from './page/soluciones/soluciones.component';
 import { ProduccionComponent } from './page/produccion/produccion.component';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ProduccionComponent } from './page/produccion/produccion.component';
     AppComponent,
     ContactanosComponent,
     CapacitacionesComponent,
-    ProduccionComponent
+    ProduccionComponent,
+    SolucionesComponent,
   ],
   imports: [
     BrowserModule,

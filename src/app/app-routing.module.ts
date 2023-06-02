@@ -4,6 +4,7 @@ import { ContactanosComponent } from './page/contactanos/contactanos.component';
 import { CapacitacionesComponent } from './page/capacitaciones/capacitaciones.component';
 import { ProductosComponent } from './page/productos/productos.component';
 import { ProduccionComponent } from './page/produccion/produccion.component';
+import { SolucionesComponent } from './page/soluciones/soluciones.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
   },
   {
     path: 'page/producción', component: ProduccionComponent
+  },
+  {
+    path: 'page/soluciones' , component: SolucionesComponent
   },
   /*{
     path: '', component: ContactanosComponent
