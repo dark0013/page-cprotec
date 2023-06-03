@@ -5,6 +5,7 @@ import { CapacitacionesComponent } from './page/capacitaciones/capacitaciones.co
 import { ProductosComponent } from './page/productos/productos.component';
 import { ProduccionComponent } from './page/produccion/produccion.component';
 import { SolucionesComponent } from './page/soluciones/soluciones.component';
+import { ServiciosComponent } from './page/servicios/servicios.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,9 @@ const routes: Routes = [
   },
   {
     path: 'page/soluciones' , component: SolucionesComponent
-  },
+  },{
+    path:'page/servicios', component: ServiciosComponent
+  }
   /*{
     path: '', component: ContactanosComponent
   }, {

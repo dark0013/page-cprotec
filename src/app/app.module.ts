@@ -7,6 +7,7 @@ import { ContactanosComponent } from './page/contactanos/contactanos.component';
 import { CapacitacionesComponent } from './page/capacitaciones/capacitaciones.component';
 import { SolucionesComponent } from './page/soluciones/soluciones.component';
 import { ProduccionComponent } from './page/produccion/produccion.component';
+import { ServiciosComponent } from './page/servicios/servicios.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ProduccionComponent } from './page/produccion/produccion.component';
     CapacitacionesComponent,
     ProduccionComponent,
     SolucionesComponent,
+    ServiciosComponent,
   ],
   imports: [
     BrowserModule,
