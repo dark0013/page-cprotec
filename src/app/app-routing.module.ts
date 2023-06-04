@@ -2,12 +2,27 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactanosComponent } from './page/contactanos/contactanos.component';
 import { CapacitacionesComponent } from './page/capacitaciones/capacitaciones.component';
+import { ProductosComponent } from './page/productos/productos.component';
+import { ProduccionComponent } from './page/produccion/produccion.component';
+import { SolucionesComponent } from './page/soluciones/soluciones.component';
+import { ServiciosComponent } from './page/servicios/servicios.component';
 
 const routes: Routes = [
   {
     path: 'page/contactanos', component: ContactanosComponent
   },{
     path: 'page/capacitaciones', component: CapacitacionesComponent
+  },
+  {
+     path: 'page/productos', component: ProductosComponent
+  },
+  {
+    path: 'page/producción', component: ProduccionComponent
+  },
+  {
+    path: 'page/soluciones' , component: SolucionesComponent
+  },{
+    path:'page/servicios', component: ServiciosComponent
   }
   /*{
     path: '', component: ContactanosComponent
