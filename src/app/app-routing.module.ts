@@ -6,13 +6,41 @@ import { ProductosComponent } from './page/productos/productos.component';
 import { ProduccionComponent } from './page/produccion/produccion.component';
 import { SolucionesComponent } from './page/soluciones/soluciones.component';
 import { ServiciosComponent } from './page/servicios/servicios.component';
+import { ServiciospadreComponent } from './page/serviciospadre/serviciospadre.component';
 
 const routes: Routes = [
   {
-    path: 'page/contactanos', component: ContactanosComponent
-  },{
-    path: 'page/capacitaciones', component: CapacitacionesComponent
+    path: 'page/contactanos',
+    component: ContactanosComponent,
   },
+  {
+    path: 'page/servicios',
+    component: ServiciospadreComponent,
+    children: [
+      {
+        path: '',
+        component: ServiciosComponent,
+      },
+      {
+        path: 'capacitaciones',
+        component: CapacitacionesComponent,
+      },
+      {
+        path: 'productos',
+        component: ProductosComponent,
+      },
+      {
+        path: 'producción',
+        component: ProduccionComponent,
+      },
+      {
+        path: 'soluciones',
+        component: SolucionesComponent,
+      },
+    ],
+  },
+
+  /*
   {
      path: 'page/productos', component: ProductosComponent
   },
@@ -24,7 +52,7 @@ const routes: Routes = [
   },{
     path:'page/servicios', component: ServiciosComponent
   }
-  /*{
+  {
     path: '', component: ContactanosComponent
   }, {
     path: '404', component: NotFoundComponent
@@ -37,6 +65,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

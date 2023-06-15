@@ -8,6 +8,7 @@ import { CapacitacionesComponent } from './page/capacitaciones/capacitaciones.co
 import { SolucionesComponent } from './page/soluciones/soluciones.component';
 import { ProduccionComponent } from './page/produccion/produccion.component';
 import { ServiciosComponent } from './page/servicios/servicios.component';
+import { ServiciospadreComponent } from './page/serviciospadre/serviciospadre.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ServiciosComponent } from './page/servicios/servicios.component';
     ProduccionComponent,
     SolucionesComponent,
     ServiciosComponent,
+    ServiciospadreComponent,
   ],
   imports: [
     BrowserModule,

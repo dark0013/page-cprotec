@@ -1,11 +1,121 @@
-<h1 class="text-center my-4">SERVICIOS</h1>
+<h1 class="text-center fw-bold my-4 titulos">SERVICIOS</h1>
 
 <div class="contenedor-cardinal">
-  <img src="assets/img/IMAGENES/Pagina principal/S_PRODUCTOSTECNOLOGICOS.jpeg" alt="Imagen 1" class="north">
-  <img src="assets/img/IMAGENES/Pagina principal/S_CAPACITACIONES.jpg" alt="Imagen 2" class="south">
-  <img src="assets/img/IMAGENES/Pagina principal/S_SOLUCIONESTECNOLÓGICAS.jpg" alt="Imagen 3" class="west">
-  <img src="assets/img/IMAGENES/Pagina principal/S_PRODUCCIONESDIGITALES.jpg" alt="Imagen 4" class="east">
+  <img
+    src="assets/img/IMAGENES/Pagina principal/S_PRODUCTOSTECNOLOGICOS.jpeg"
+    routerLink="productos"
+    loading="lazy"
+    alt="Imagen 1"
+    class="north"
+  />
+  <img
+    src="assets/img/IMAGENES/Pagina principal/S_CAPACITACIONES.jpg"
+    routerLink="capacitaciones"
+    loading="lazy"
+    alt="Imagen 2"
+    class="south"
+  />
+  <img
+    src="assets/img/IMAGENES/Pagina principal/S_SOLUCIONESTECNOLÓGICAS.jpg"
+    routerLink="soluciones"
+    loading="lazy"
+    alt="Imagen 3"
+    class="west"
+  />
+  <img
+    src="assets/img/IMAGENES/Pagina principal/S_PRODUCCIONESDIGITALES.jpg"
+    routerLink="producción"
+    loading="lazy"
+    alt="Imagen 4"
+    class="east"
+  />
 </div>
+<h1 class="text-center fw-bold titulos">CONOCE NUESTROS PLANES</h1>
+<div class="container my-4">
+  <table class="tabla-con-fondo">
+    <thead>
+      <tr>
+        <th class="quitar-color-fondo" style="border: 0"></th>
+        <th colspan="3" class="text-center">CREACIÓN DE PÁGINA WEB</th>
+      </tr>
+      <tr>
+        <th class="quitar-color-fondo" style="border: 0"></th>
+        <th class="text-center text-white fondo-degradado">Básico</th>
+        <th class="text-center text-white fondo-degradado">Profesional</th>
+        <th class="text-center text-white fondo-degradado">Tienda virtual</th>
+      </tr>
+    </thead>
+    <tbody style="background-color: #40e0d0;">
+      <tr *ngFor="let item of servicios; let i = index">
+        <td [ngClass]="{ 'registro-par': i % 2 !== 0 }" class="text-white">{{ item.nombre }}</td>
+        <td class="text-center">{{ item.basico }}</td>
+        <td class="text-center">{{ item.profesional }}</td>
+        <td class="text-center">{{ item.tienda_virtual }}</td>
+      </tr>
+    </tbody>
+  </table>
 
-<h1>CONOCE NUESTROS PLANES</h1>
+  <h1 class="my-4 text-center fw-bold titulos">REALIZA TU COTIZACIÓN</h1>
 
+
+  <div class="fondo-degradado py-4 px-4 text-white fw-bold">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-md-12 mb-2">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Nombres</label
+            >
+            <input type="text" class="form-control" id="txt_nombre" />
+          </div>
+
+          <div class="col-md-12 mb-2">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Apellidos
+            </label>
+            <input type="email" class="form-control" id="txt_apellidos" />
+          </div>
+
+          <div class="col-md-12 mb-2">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Celular</label
+            >
+            <input type="email" class="form-control" id="txt_celular" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-md-12 mb-2">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Correo</label
+            >
+            <input type="email" class="form-control" id="txt_correo" />
+          </div>
+          <div class="col-md-12 mb-2">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Asunto</label
+            >
+            <input type="email" class="form-control" id="txt_asunto" />
+          </div>
+          <div class="col-md-12 mb-2">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Mensaje</label
+            >
+            <textarea
+              class="form-control"
+              id="txt_mensaje"
+              rows="3"
+              style="resize: none"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 my-2">
+        <button class="btn btn-success" type="button">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
