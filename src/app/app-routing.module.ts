@@ -7,6 +7,7 @@ import { ProduccionComponent } from './page/produccion/produccion.component';
 import { SolucionesComponent } from './page/soluciones/soluciones.component';
 import { ServiciosComponent } from './page/servicios/servicios.component';
 import { ServiciospadreComponent } from './page/serviciospadre/serviciospadre.component';
+import { PlatafotmaeducativaComponent } from './page/platafotmaeducativa/platafotmaeducativa.component';
 
 const routes: Routes = [
   {
@@ -38,23 +39,12 @@ const routes: Routes = [
         component: SolucionesComponent,
       },
     ],
-  },
+  }, {
+    path: 'page/productos', component: PlatafotmaeducativaComponent
+  }
 
   /*
-  {
-     path: 'page/productos', component: ProductosComponent
-  },
-  {
-    path: 'page/producción', component: ProduccionComponent
-  },
-  {
-    path: 'page/soluciones' , component: SolucionesComponent
-  },{
-    path:'page/servicios', component: ServiciosComponent
-  }
-  {
-    path: '', component: ContactanosComponent
-  }, {
+ , {
     path: '404', component: NotFoundComponent
   },
   {
@@ -67,4 +57,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
