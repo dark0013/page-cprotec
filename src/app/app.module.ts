@@ -10,6 +10,7 @@ import { ProduccionComponent } from './page/produccion/produccion.component';
 import { ServiciosComponent } from './page/servicios/servicios.component';
 import { ServiciospadreComponent } from './page/serviciospadre/serviciospadre.component';
 import { PlatafotmaeducativaComponent } from './page/platafotmaeducativa/platafotmaeducativa.component';
+import { NoticiasComponent } from './page/noticias/noticias.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PlatafotmaeducativaComponent } from './page/platafotmaeducativa/platafo
     ServiciosComponent,
     ServiciospadreComponent,
     PlatafotmaeducativaComponent,
+    NoticiasComponent,
   ],
   imports: [
     BrowserModule,

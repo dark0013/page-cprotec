@@ -8,6 +8,7 @@ import { SolucionesComponent } from './page/soluciones/soluciones.component';
 import { ServiciosComponent } from './page/servicios/servicios.component';
 import { ServiciospadreComponent } from './page/serviciospadre/serviciospadre.component';
 import { PlatafotmaeducativaComponent } from './page/platafotmaeducativa/platafotmaeducativa.component';
+import { NoticiasComponent } from './page/noticias/noticias.component';
 
 const routes: Routes = [
   {
@@ -39,8 +40,11 @@ const routes: Routes = [
         component: SolucionesComponent,
       },
     ],
-  }, {
+  },
+  {
     path: 'page/productos', component: PlatafotmaeducativaComponent
+  },{
+    path: 'page/noticias', component: NoticiasComponent
   }
 
   /*
