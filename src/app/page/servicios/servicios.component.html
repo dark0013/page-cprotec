@@ -1,34 +1,14 @@
 <h1 class="text-center fw-bold my-4 titulos">SERVICIOS</h1>
 
 <div class="contenedor-cardinal">
-  <img
-    src="assets/img/IMAGENES/Pagina principal/S_PRODUCTOSTECNOLOGICOS.jpeg"
-    routerLink="productos"
-    loading="lazy"
-    alt="Imagen 1"
-    class="north"
-  />
-  <img
-    src="assets/img/IMAGENES/Pagina principal/S_CAPACITACIONES.jpg"
-    routerLink="capacitaciones"
-    loading="lazy"
-    alt="Imagen 2"
-    class="south"
-  />
-  <img
-    src="assets/img/IMAGENES/Pagina principal/S_SOLUCIONESTECNOLÓGICAS.jpg"
-    routerLink="soluciones"
-    loading="lazy"
-    alt="Imagen 3"
-    class="west"
-  />
-  <img
-    src="assets/img/IMAGENES/Pagina principal/S_PRODUCCIONESDIGITALES.jpg"
-    routerLink="producción"
-    loading="lazy"
-    alt="Imagen 4"
-    class="east"
-  />
+  <img src="assets/img/IMAGENES/Pagina principal/S_PRODUCTOSTECNOLOGICOS.jpeg" routerLink="productos" loading="lazy"
+    alt="Imagen 1" class="north" />
+  <img src="assets/img/IMAGENES/Pagina principal/S_CAPACITACIONES.jpg" routerLink="capacitaciones" loading="lazy"
+    alt="Imagen 2" class="south" />
+  <img src="assets/img/IMAGENES/Pagina principal/S_SOLUCIONESTECNOLÓGICAS.jpg" routerLink="soluciones" loading="lazy"
+    alt="Imagen 3" class="west" />
+  <img src="assets/img/IMAGENES/Pagina principal/S_PRODUCCIONESDIGITALES.jpg" routerLink="producción" loading="lazy"
+    alt="Imagen 4" class="east" />
 </div>
 <h1 class="text-center fw-bold titulos">CONOCE NUESTROS PLANES</h1>
 <div class="container my-4">
@@ -48,10 +28,19 @@
     <tbody style="background-color: #40e0d0;">
       <tr *ngFor="let item of servicios; let i = index">
         <td [ngClass]="{ 'registro-par': i % 2 !== 0 }" class="text-white">{{ item.nombre }}</td>
-        <td class="text-center">{{ item.basico }}</td>
-        <!-- <span [ngClass]="{ 'fa fab-dinner': item.basico === 'ok', 'fa fab-error': item.basico === 'x' }"></span> -->
-        <td class="text-center">{{ item.profesional }}</td>
-        <td class="text-center">{{ item.tienda_virtual }}</td>
+
+        <td class="text-center text-white" [ngClass]="{'registro-par':item.basico === 'X'}">
+          <span [ngClass]="item.basico === 'OK' ? 'fas fa-check' : (item.basico === 'X' ? 'fas fa-times' : '')"></span>
+        </td>
+        <td class="text-center text-white" [ngClass]="{'registro-par':item.profesional === 'X'}">
+          <span
+            [ngClass]="item.profesional === 'OK' ? 'fas fa-check' : (item.profesional === 'X' ? 'fas fa-times' : '')"></span>
+        </td>
+        <td class="text-center text-white" [ngClass]="{'registro-par':item.tienda_virtual === 'X'}">
+
+          <span
+            [ngClass]="item.tienda_virtual === 'OK' ? 'fas fa-check' : (item.tienda_virtual === 'X' ? 'fas fa-times' : '')"></span>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -64,23 +53,18 @@
       <div class="col-md-6">
         <div class="row justify-content-center">
           <div class="col-md-12 mb-2">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Nombres</label
-            >
+            <label for="exampleFormControlInput1" class="form-label">Nombres</label>
             <input type="text" class="form-control" id="txt_nombre" />
           </div>
 
           <div class="col-md-12 mb-2">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Apellidos
+            <label for="exampleFormControlInput1" class="form-label">Apellidos
             </label>
             <input type="email" class="form-control" id="txt_apellidos" />
           </div>
 
           <div class="col-md-12 mb-2">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Celular</label
-            >
+            <label for="exampleFormControlInput1" class="form-label">Celular</label>
             <input type="email" class="form-control" id="txt_celular" />
           </div>
         </div>
@@ -89,27 +73,16 @@
       <div class="col-md-6">
         <div class="row justify-content-center">
           <div class="col-md-12 mb-2">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Correo</label
-            >
+            <label for="exampleFormControlInput1" class="form-label">Correo</label>
             <input type="email" class="form-control" id="txt_correo" />
           </div>
           <div class="col-md-12 mb-2">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Asunto</label
-            >
+            <label for="exampleFormControlInput1" class="form-label">Asunto</label>
             <input type="email" class="form-control" id="txt_asunto" />
           </div>
           <div class="col-md-12 mb-2">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Mensaje</label
-            >
-            <textarea
-              class="form-control"
-              id="txt_mensaje"
-              rows="3"
-              style="resize: none"
-            ></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="txt_mensaje" rows="3" style="resize: none"></textarea>
           </div>
         </div>
       </div>
