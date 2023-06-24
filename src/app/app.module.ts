@@ -11,6 +11,7 @@ import { ServiciosComponent } from './page/servicios/servicios.component';
 import { ServiciospadreComponent } from './page/serviciospadre/serviciospadre.component';
 import { PlatafotmaeducativaComponent } from './page/platafotmaeducativa/platafotmaeducativa.component';
 import { NoticiasComponent } from './page/noticias/noticias.component';
+import { InicioComponent } from './page/inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NoticiasComponent } from './page/noticias/noticias.component';
     ServiciospadreComponent,
     PlatafotmaeducativaComponent,
     NoticiasComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,
