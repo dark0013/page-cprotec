@@ -10,6 +10,7 @@ import { ServiciospadreComponent } from './page/serviciospadre/serviciospadre.co
 import { PlatafotmaeducativaComponent } from './page/platafotmaeducativa/platafotmaeducativa.component';
 import { NoticiasComponent } from './page/noticias/noticias.component';
 import { InicioComponent } from './page/inicio/inicio.component';
+import { NosotrosComponent } from './page/nosotros/nosotros.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'page/noticias',
     component: NoticiasComponent,
+  },
+  {
+    path:'page/nosotros',
+    component: NosotrosComponent,
   },
 
   /*

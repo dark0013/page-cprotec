@@ -12,6 +12,7 @@ import { ServiciospadreComponent } from './page/serviciospadre/serviciospadre.co
 import { PlatafotmaeducativaComponent } from './page/platafotmaeducativa/platafotmaeducativa.component';
 import { NoticiasComponent } from './page/noticias/noticias.component';
 import { InicioComponent } from './page/inicio/inicio.component';
+import { NosotrosComponent } from './page/nosotros/nosotros.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { InicioComponent } from './page/inicio/inicio.component';
     PlatafotmaeducativaComponent,
     NoticiasComponent,
     InicioComponent,
+    NosotrosComponent,
   ],
   imports: [
     BrowserModule,
