@@ -1,0 +1,56 @@
+.contenedor {
+  /*   position: relative; */
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../../assets/img/IMAGENES/Pagina principal/inicio.jpg');
+  background-size: 100% 100%;
+}
+
+
+.filtro-azul::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.welcome {
+  position: relative;
+  width: 50%;
+  margin-left: 5%;
+  /* Ajusta el valor según el espacio deseado a la izquierda */
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.welcome-text {
+  color: white;
+  font-size: 8rem;
+}
+
+
+@media (max-width: 767px) {
+  .contenedor {
+    height: 200px;
+    background-size: contain;
+
+  }
+
+  .filtro-azul::before {
+    content: "";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    background-color: blue;
+    opacity: 0.5;
+  }
+
+  .welcome-text {
+    color: white;
+    font-size: 2rem;
+  }
+}
