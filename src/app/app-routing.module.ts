@@ -12,8 +12,8 @@ import { NoticiasComponent } from './page/noticias/noticias.component';
 import { InicioComponent } from './page/inicio/inicio.component';
 
 const routes: Routes = [
-  {path: 'inicio', component: InicioComponent},
-  {path: '', redirectTo: 'inicio', pathMatch: 'full'},
+  { path: 'inicio', component: InicioComponent },
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
   {
     path: 'page/contactanos',
     component: ContactanosComponent,
@@ -45,10 +45,13 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'page/productos', component: PlatafotmaeducativaComponent
-  },{
-    path: 'page/noticias', component: NoticiasComponent
-  }
+    path: 'page/plataformaEducativa',
+    component: PlatafotmaeducativaComponent,
+  },
+  {
+    path: 'page/noticias',
+    component: NoticiasComponent,
+  },
 
   /*
  , {
@@ -64,4 +67,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
