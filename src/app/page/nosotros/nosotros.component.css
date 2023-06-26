@@ -8,6 +8,8 @@
     background: linear-gradient(90deg, rgba(9,60,121,1) 56%, rgba(0,211,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#093c79",endColorstr="#00d3ff",GradientType=1);
     padding: 10px;
+
+    border-radius: 30px ;
 }
 .letrac{
     color: rgb(16, 70, 187);
@@ -38,4 +40,36 @@
     padding: 10px;
 }
 
+.card-personalizado{
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: white;
+}
 
+.mision-vision{
+  height: 350px;
+  font-size: 25px;
+}
+
+.diamante{
+  position: relative;
+  height: 600px;
+  width: 35%;
+  background-color: aqua;
+  border-radius: 25px;
+}
+
+.contexto-nosotros{
+  height: 550px;
+  width: 65%;
+  position: relative;
+  left: 400px;
+  top: -570px;
+  transition: 50%;
+  background-color: rgb(255, 0, 0);
+  border-radius: 0 30px 30px 0;
+}
+
+.container-diamante{
+  height: 600px;
+}
