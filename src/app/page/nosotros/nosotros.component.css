@@ -4,9 +4,9 @@
 
 .estilo1 {
   background: rgb(9, 60, 121);
-  background: -moz-linear-gradient(90deg, rgba(9, 60, 121, 1) 56%, rgba(0, 211, 255, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(9, 60, 121, 1) 56%, rgba(0, 211, 255, 1) 100%);
-  background: linear-gradient(90deg, rgba(9, 60, 121, 1) 56%, rgba(0, 211, 255, 1) 100%);
+  background: -moz-linear-gradient(90deg, rgba(9, 60, 121, 1) 30%, rgba(0, 211, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(9, 60, 121, 1) 30%, rgba(0, 211, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(9, 60, 121, 1) 30%, rgba(0, 211, 255, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#093c79", endColorstr="#00d3ff", GradientType=1);
   padding: 10px;
 
@@ -15,9 +15,9 @@
 
 .estilo1-vertical {
   background: rgb(9, 60, 121);
-  background: -moz-linear-gradient(0deg, rgba(0, 211, 255, 1) 56%, rgba(9, 60, 121, 1) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(0, 211, 255, 1) 56%, rgba(9, 60, 121, 1) 100%);
-  background: linear-gradient(0deg, rgba(0, 211, 255, 1) 56%, rgba(9, 60, 121, 1) 100%);
+  background: -moz-linear-gradient(0deg, rgba(0, 211, 255, 1) 30%, rgba(9, 60, 121, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0, 211, 255, 1) 30%, rgba(9, 60, 121, 1) 100%);
+  background: linear-gradient(0deg, rgba(0, 211, 255, 1) 30%, rgba(9, 60, 121, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d3ff", endColorstr="#093c79", GradientType=0);
   padding: 10px;
   border-radius: 30px;
@@ -104,18 +104,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* animacion */
-@keyframes rotateRow {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.rotating-row {
-  animation: rotateRow 10s infinite linear;
 }
