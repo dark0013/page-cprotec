@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./platafotmaeducativa.component.css']
 })
 export class PlatafotmaeducativaComponent {
+  
+  abrirPlataforma() {
+    const url = 'https://cprotec.net/moodle/';
+    window.open(url, '_blank');
+  }
 
 }

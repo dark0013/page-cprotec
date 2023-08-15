@@ -17,7 +17,7 @@
   height: 100%;
 }
 .fondo-informatica {
-  background-image: url('../../../assets/img/IMAGENES/Pagina principal/NFORMÁTICA.jpg');
+  background-image: url('../../../assets/img/IMAGENES/Pagina principal/NFORMATICA.jpg');
   height: 500px;
 }
 
@@ -26,12 +26,12 @@
   height: 245px;
 }
 .fondo-diseño{
-  background-image: url('../../../assets/img/IMAGENES/Pagina principal/DISEÑO GRÁFICO.jpg');
+  background-image: url('../../../assets/img/IMAGENES/Pagina principal/DISENO GRAFICO.jpg');
   height: 245px;
 }
 
 .fondo-proyecto-asesoria {
-  background-image: url('../../../assets/img/IMAGENES/Pagina principal/ASESORÍA PROYECTOS.jpg');
+  background-image: url('../../../assets/img/IMAGENES/Pagina principal/ASESORIA PROYECTOS.jpg');
   height: 500px;
 }
 
