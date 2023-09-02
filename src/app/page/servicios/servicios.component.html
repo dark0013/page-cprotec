@@ -1,6 +1,6 @@
 <h1 class="text-center fw-bold my-4 titulos">SERVICIOS</h1>
 
-<div class="contenedor-cardinal">
+<!-- <div class="contenedor-cardinal">
   <img src="assets/img/IMAGENES/Pagina principal/S_PRODUCTOSTECNOLOGICOS.jpeg" routerLink="productos" loading="lazy"
     alt="Imagen 1" class="north" />
   <img src="assets/img/IMAGENES/Pagina principal/S_CAPACITACIONES.jpg" routerLink="capacitaciones" loading="lazy"
@@ -10,6 +10,44 @@
   <img src="assets/img/IMAGENES/Pagina principal/S_PRODUCCIONESDIGITALES.jpg" routerLink="producción" loading="lazy"
     alt="Imagen 4" class="east" />
 </div>
+ -->
+<div class="container">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/IMAGENES/Pagina principal/S_PRODUCTOSTECNOLOGICOS.jpeg" class="d-block w-100"
+          height="300px" routerLink="productos" loading="lazy" alt="Producciones Tecnologicos">
+
+       <!--  <div class="carousel-caption d-none d-md-block bg-info">
+          <h2>Etiqueta de la primera diapositiva</h2>
+          <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/IMAGENES/Pagina principal/S_CAPACITACIONES.jpg" class="d-block w-100" height="300px"
+          routerLink="capacitaciones" loading="lazy" alt="capacitaciones">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/IMAGENES/Pagina principal/S_SOLUCIONESTECNOLOGICAS.jpg" class="d-block w-100"
+          height="300px" routerLink="soluciones" loading="lazy" alt="Soluciones Tecnologicas">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/IMAGENES/Pagina principal/S_PRODUCCIONESDIGITALES.jpg" class="d-block w-100"
+          routerLink="producción" loading="lazy" height="300px" alt="Producciones Digitales">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
+
+
 <h1 class="text-center fw-bold titulos">CONOCE NUESTROS PLANES</h1>
 <div class="container my-4">
   <table class="tabla-con-fondo">

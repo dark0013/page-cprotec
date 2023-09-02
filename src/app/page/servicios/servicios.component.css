@@ -1,38 +1,4 @@
-.contenedor-cardinal {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-}
 
-img {
-  position: absolute;
-  width: 20%;
-  height: auto;
-}
-
-.north {
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.south {
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.west {
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-}
-
-.east {
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-}
 
 
 table {
