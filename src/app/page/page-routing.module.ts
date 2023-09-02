@@ -34,7 +34,7 @@ export const routes: Routes = [
         component: ProductosComponent,
       },
       {
-        path: 'producción',
+        path: 'produccion',
         component: ProduccionComponent,
       },
       {
