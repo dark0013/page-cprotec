@@ -9,7 +9,7 @@ export class NoticiasComponent {
 
   datosNoticias: any[] = [
     {
-      imagen: "https://jpegcomputer.com/wp-content/uploads/2021/12/img_28871.jpg", titulo: "PROTEGE TU EQUIIPO DE LOS VIRUS INFORMÁTICO", cotextos: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      imagen: "https://jpegcomputer.com/wp-content/uploads/2021/12/img_28871.jpg", titulo: "PROTEGE TU EQUIPO DE LOS VIRUS INFORMÁTICOS", cotextos: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     }, {
       imagen: "https://enterate24backup.s3.amazonaws.com/uploads/2020/09/internet_12529983_20191031174711.jpg", titulo: "INTERCONECCIÓN EN REDES", cotextos: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     }, {
